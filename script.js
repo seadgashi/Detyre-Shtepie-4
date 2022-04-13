@@ -66,7 +66,7 @@ function kliko() {
                 <p>Mosha:${personi.age}</p>
                 <p>Ekipi:${personi.team}</p>
                 <p>Pozicioni:${personi.position}</p>
-                <p>Pozicioni:${personi.number}</p>
+                <p>Numri:${personi.number}</p>
                 <p>---------------------------</p>
             </div>
         `;
