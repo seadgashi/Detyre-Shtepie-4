@@ -57,8 +57,11 @@ function kliko() {
 
         ]
     };
+    if(document.querySelector('#option').value.length == 0){
+        alert("Ju lutem shkruani emrin e nje lojtar i cili eshte ne list!");
+    } 
     theData.personat.filter(personi => {
-        if (personi.name == x || personi.name.toUpperCase() == x || personi.name.toLowerCase() == x){
+       if(personi.name == x || personi.name.toUpperCase() == x || personi.name.toLowerCase() == x){
             document.querySelector('#tedhanat').innerHTML +=`
             <div class="teDhenat">
                 <p>Emri:${personi.name}</p>
@@ -70,7 +73,11 @@ function kliko() {
                 <p>---------------------------</p>
             </div>
         `;
-        } 
+    
+     
+        }
+            
+        
     })  
     
 }
